@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Cisne Azul</title>
+    <link
+      rel="shortcut icon"
+      href="imagens/icon.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="imagens/logocisneazul.png" alt="Cisne Azul">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Quem somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-outline" onclick="contatoWhats()">RESERVAS</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-text reveal">
+                <p class="since">Uma experiência acolhedora,</p>
+                <h1>Conforto e <br> <span>atendimento.</span></h1>
+                <p>feito para você se sentir em casa.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="acomodacoes" class="accommodations">
+    <div class="container accommodations-flex reveal">
+        <div class="accommodations-text">
+            <h2>Acomodações</h2>
+            <p>Hotel Cisne Azul fica em Sidrolândia. Esta hospedagem domiciliar oferece jardim e estacionamento privativo grátis.</p>
+            
+            <p>A hospedagem domiciliar oferece toalhas e roupa de cama.</p>
+
+            <p>Um dos fatores mais consistentemente elogiados pelos visitantes é a qualidade do atendimento. </p>
+            
+            <p>Essa abordagem cria uma atmosfera acolhedora, fazendo com que os hóspedes se sintam em casa.</p>
+            <p>Para quem passa dias longe de casa, seja a trabalho ou a lazer, encontrar um ambiente que oferece essa sensação de bem-estar.</p>
+            <p>A localização central é, sem dúvida, uma vantagem estratégica. Estar no coração de Sidrolândia facilita o acesso a comércios, restaurantes e outros serviços, permitindo que os hóspedes se desloquem com facilidade, muitas vezes a pé. </p>
+            
+        
+        </div>
+
+        <div class="accommodations-slider">
+            <div class="slider-container" id="slider">
+                <img src="imagens/quarto1.webp" alt="Acomodação 1" class="slide active">
+                <img src="imagens/quarto2.webp" alt="Acomodação 2" class="slide">
+                <img src="imagens/quarto3.webp" alt="Acomodação 3" class="slide">
+                <img src="imagens/quarto4.webp" alt="Acomodação 4" class="slide">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+    <section id="servicos" class="specialties container">
+        <div class="section-title reveal">
+            <h2>Serviços e benefícios para a sua hospedagem</h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="services-grid">
+            <article class="service-card reveal">
+                <div class="card-img">
+                    <img src="imagens/atendimento.webp" alt="Atendimento 24H">
+                    <div class="accent-bar"></div>
+                </div>
+                <h3>Hotel 24h</h3>
+                <p>Atendimento a qualquer hora do dia ou da noite.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <div class="card-img">
+                    <img src="imagens/cafe.png" alt="café">
+                    <div class="accent-bar"></div>
+                </div>
+                <h3>Café</h3>
+                <p>Para começar bem o dia com aquela energia.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <div class="card-img">
+                    <img src="imagens/wifi.webp" alt="Wi-fi gratuito">
+                    <div class="accent-bar"></div>
+                </div>
+                <h3>Wi-Fi gratuito</h3>
+                <p>Nos dias de hoje é imprescindível ficar sempre conectado.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <div class="card-img">
+                    <img src="imagens/conforto.png" alt="conforto">
+                    <div class="accent-bar"></div>
+                </div>
+                <h3>Conforto e Elegância</h3>
+                <p>Cada detalhe é cuidadosamente planejado para proporcionar uma estadia única e relaxante. </p>
+            </article>
+
+            <article class="service-card reveal">
+                <div class="card-img">
+                    <img src="imagens/apis.webp" alt="APs">
+                    <div class="accent-bar"></div>
+                </div>
+                <h3>APs individuais e duplos.</h3>
+                <p>Escolha o que melhor se adapta à sua necessidade.</p>
+            </article>
+
+            <article class="service-card reveal">
+                <div class="card-img">
+                    <img src="imagens/ambiente.png" alt="Ambiente">
+                    <div class="accent-bar"></div>
+                </div>
+                <h3>Ambiente Sofisticado</h3>
+                <p>Camas aconchegantes, TV a cabo, ar condicionado e um ambiente sofisticado que farão você se sentir em casa.</p>
+            </article>
+        </div>
+
+        <div class="center-btn reveal">
+            <button class="btn-filled" onclick="contatoWhats()">QUERO FAZER UMA RESERVA</button>
+        </div>
+    </section>
+
+    <section id="sobre" class="about container reveal">
+    <div class="about-flex">
+        <div class="about-text">
+            <h2>A HOTEL CISNE AZUL...</h2>
+            <p>é o destino ideal para quem busca conforto, praticidade e uma experiência acolhedora. Pensada para oferecer bem-estar em cada detalhe, a pousada conta com quartos equipados com ar-condicionado, Wi-Fi gratuito e banheiro privativo, garantindo comodidade e tranquilidade durante toda a sua estadia.</p>
+            <p>Todos os quartos possuem varanda térrea, proporcionando um ambiente agradável e perfeito para relaxar. Além disso, cada acomodação é equipada com mesa de trabalho e TV de tela plana, unindo conforto e funcionalidade. Para sua total comodidade, disponibilizamos roupas de cama e toalhas de qualidade.</p>
+            <p>Ao buscar uma opção de hospedagem em Sidrolândia, Mato Grosso do Sul, o Hotel Cisne Azul surge como uma alternativa que se equilibra entre a simplicidade e o conforto essencial. </p>
+            <p>Localizado na Rua Paraná, 1028, no centro da cidade, este estabelecimento se posiciona como uma escolha pragmática para viajantes que valorizam a localização e um serviço atencioso. </p>
+        </div>
+        <div class="about-img">
+            <img src="imagens/fachada.png" alt="Nossa Fachada" class="rounded-fachada">
+        </div>
+    </div>
+
+</section>
+
+<!-- ==========================================================================
+       SECTION FAQ (PERGUNTAS FREQUENTES)
+       ========================================================================== -->
+    <section id="faq" class="faq-section container reveal">
+        <div class="section-title">
+            <h2>Perguntas Frequentes</h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="faq-container">
+            <!-- Pergunta 1 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    Quais são os horários de check-in e check-out?
+                    <span class="faq-icon">&#10095;</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>O nosso check-in inicia às 16:00 e o check-out deve ser realizado até as 11:00. Caso necessite de horários flexíveis, entre em contato conosco previamente para verificar a disponibilidade.</p>
+                </div>
+            </details>
+
+            <!-- Pergunta 2 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    O café da manhã está incluso na estadia?
+                    <span class="faq-icon">&#10095;</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Sim! Oferecemos um café da manhã preparado com muito carinho para que você comece o dia com total energia e conforto.</p>
+                </div>
+            </details>
+
+            <!-- Pergunta 3 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    O hotel possui estacionamento? É gratuito?
+                    <span class="faq-icon">&#10095;</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Sim, disponibilizamos estacionamento privativo totalmente gratuito para os nossos hóspedes durante todo o período da estadia.</p>
+                </div>
+            </details>
+
+            <!-- Pergunta 4 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    Como funcionam as reservas e cancelamentos?
+                    <span class="faq-icon">&#10095;</span>
+                </summary>
+                <div class="faq-answer">
+                    <p>As reservas podem ser feitas rapidamente clicando no nosso botão do WhatsApp. Sobre cancelamentos, nossa equipe informará as condições vigentes no momento do seu contato.</p>
+                </div>
+            </details>
+        </div>
+    </section>
+
+
+
+    <footer id="contato" class="main-footer">
+    <div class="container footer-grid">
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#sobre">Quem somos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>CONTATO</h3>
+            <p>📞 (67) 3272-2387</p>
+            <br>
+            <h3>HORÁRIO</h3>
+            <p>Horário de check-in: 16:00</p>
+            <p>Horário de check-out: 11:00</p>
+            <br>
+            <p>📍 R. Paraná, 1028 - Centro, Sidrolândia - MS</p>
+            <a href="https://maps.app.goo.gl/zh8gKT68AADZ7Qys7" target="_blank" class="map-link">MOSTRAR NO MAPA</a>
+        </div>
+
+        <div class="footer-cta">
+            <button class="btn-filled" onclick="contatoWhats()">RESERVAR AGORA</button>
+            
+           
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
